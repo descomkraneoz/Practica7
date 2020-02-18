@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "389597184728",
+    "firebase_url": "https://p7-2020-manuelmartinezserrano.firebaseio.com",
+    "project_id": "p7-2020-manuelmartinezserrano",
+    "storage_bucket": "p7-2020-manuelmartinezserrano.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389597184728:android:88da8b4f7d163cfd044dad",
+        "android_client_info": {
+          "package_name": "net.iessochoa.manuelmartinez.practica7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389597184728-5qqogrqlkl3au3q0lp8f72eivoobvk2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.iessochoa.manuelmartinez.practica7",
+            "certificate_hash": "797d38207f006e2cafca37aa0f9e903e428e7f5f"
+          }
+        },
+        {
+          "client_id": "389597184728-k4j8p993rusaeeqalvsq7lvaul77hcrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRgFvTIYxoDgPKsiiRBYG3AGMPbYpooFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389597184728-k4j8p993rusaeeqalvsq7lvaul77hcrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
