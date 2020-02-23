@@ -31,4 +31,68 @@
         android:text="Cerrar Sesion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_datosUsr" />
+
+    <Spinner
+        android:id="@+id/spConferencias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btVerConferencia"
+        app:layout_constraintTop_toBottomOf="@+id/auth" />
+
+    <ImageButton
+        android:id="@+id/btVerConferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/ic_menu_info_details"
+        app:layout_constraintBottom_toBottomOf="@+id/spConferencias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth" />
+
+    <TextView
+        android:id="@+id/tvConferenciaIniciada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/fui_bgFacebook"
+        app:layout_constraintStart_toStartOf="@+id/tv_datosUsr"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datosUsr" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTextoMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spConferencias"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <EditText
+        android:id="@+id/etTextoMensaje"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibtEnviar"
+        app:layout_constraintStart_toStartOf="@+id/rvChat" />
+
+    <ImageButton
+        android:id="@+id/ibtEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etTextoMensaje"
+        app:layout_constraintEnd_toEndOf="@+id/rvChat"
+        app:layout_constraintTop_toTopOf="@+id/etTextoMensaje"
+        app:srcCompat="@android:drawable/ic_menu_send" />
 </androidx.constraintlayout.widget.ConstraintLayout>
