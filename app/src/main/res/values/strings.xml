@@ -3,4 +3,16 @@
     <string name="tvTituloTelefono">Teléfono: </string>
     <string name="tvTituloDireccion">Dirección: </string>
     <string name="itMenuDatosEmpresa">Datos Empresa</string>
+    <string name="flecha"> -> </string>
+    <string name="errorRecuperarConf">Error al recuperar los documentos: </string>
+    <string name="tituloConferencia">Información de la conferencia</string>
+    <string name="ConferenciaFecha">Fecha:</string>
+    <string name="ConferenciaHorario">Horario:</string>
+    <string name="ConferenciaSala">Sala:</string>
+    <string name="falloAlEscuchar">Escucha fallida.</string>
+    <string name="tvConferenciaIniciada">C.iniciada:</string>
+    <string name="msgConferenciaIniciada">Conferencia iniciada:</string>
+    <string name="msgConferenciaNoIniciada">Error conferencia NO iniciada</string>
+
+
 </resources>

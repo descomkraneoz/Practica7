@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FEE65E"
+    android:background="@color/fui_bgTwitter"
     tools:context=".ui.InicioAppActivity">
 
     <TextView
@@ -15,6 +15,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="Cerrar Sesion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_datosUsr" />
@@ -50,6 +51,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@android:drawable/ic_menu_info_details"
+        android:backgroundTint="#FFC107"
         app:layout_constraintBottom_toBottomOf="@+id/spConferencias"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/auth" />
@@ -67,12 +69,17 @@
         android:id="@+id/rvChat"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_redondeado"
         app:layout_constraintBottom_toTopOf="@+id/etTextoMensaje"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spConferencias"
-        app:layout_constraintVertical_bias="0.563" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/etTextoMensaje"
@@ -91,6 +98,7 @@
         android:id="@+id/ibtEnviar"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:tint="@color/fui_bgAnonymous"
         app:layout_constraintBottom_toBottomOf="@+id/etTextoMensaje"
         app:layout_constraintEnd_toEndOf="@+id/rvChat"
         app:layout_constraintTop_toTopOf="@+id/etTextoMensaje"

@@ -28,7 +28,7 @@ public class ChatAdapter extends FirestoreRecyclerAdapter<Mensaje, ChatAdapter.C
 
     @Override
     protected void onBindViewHolder(@NonNull ChatAdapter.ChatHolder holder, int position, @NonNull Mensaje model) {
-        //Miramos si es el usario logeado en nuestro telefono el que envia el mensaje
+        //Miramos si es el usario logeado en nuestro telefono es el que envia el mensaje
         //Si lo es cambiamos la alineacion del texto y el color de fondo del mensaje
         if (model.getUsuario().equals(usuarioActual)) {
             holder.tvMensaje.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
