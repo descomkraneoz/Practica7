@@ -1,10 +1,10 @@
 package net.iessochoa.manuelmartinez.practica7.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(
                     AuthUI.getInstance()
                             .createSignInIntentBuilder()
-// Si quisieramos varios proveedores de autenticación.
-// Mirar la documentación oficial, ya que cambia de una versión a otra
-// .setAvalaibleProviders(
-// AuthUI.EMAIL_PROVIDER,
-// AuthUI.GOOGLE_PROVIDER)
+                            // Si quisieramos varios proveedores de autenticación.
+                            // Mirar la documentación oficial, ya que cambia de una versión a otra
+                            // .setAvalaibleProviders(
+                            // AuthUI.EMAIL_PROVIDER,
+                            // AuthUI.GOOGLE_PROVIDER)
                             //icono que mostrará, a mi no me funciona
-//.setLogo(R.drawable.ic_developer_board_red_a700_48dp)
+                            //.setLogo(R.drawable.ic_developer_board_red_a700_48dp)
                             .setIsSmartLockEnabled(false)
                     //para guardar contraseñas y usuario: true
                     .build(),
@@ -62,13 +62,13 @@ public class MainActivity extends AppCompatActivity {
                 String msg_error = "";
                 if (response == null) {
                     // User pressed back button
-                    msg_error = "Es necesario autenticarse";
+                    msg_error = "Es necesario autenticarse"; //esto debería pasarlo a values/string.xml
                 } else if (response.getError().getErrorCode() ==
                         ErrorCodes.NO_NETWORK) {
-                    msg_error = "No hay red disponible para autenticarse";
+                    msg_error = "No hay red disponible para autenticarse";//esto debería pasarlo a values/string.xml
                 } else {
                     //if (response.getErrorCode() == ErrorCodes.UNKNOWN_ERROR) {
-                        msg_error = "Error desconocido al autenticarse";
+                    msg_error = "Error desconocido al autenticarse";//esto debería pasarlo a values/string.xml
                     }
                     Toast.makeText(
                             this,

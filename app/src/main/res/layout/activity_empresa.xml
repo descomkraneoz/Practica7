@@ -23,39 +23,43 @@
         tools:text="IES SEVERO OCHOA" />
 
     <TextView
+        android:id="@+id/tvTituloDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvTituloDireccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+    <TextView
         android:id="@+id/tvDireccion"
         android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="textStart"
-        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloDireccion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
-        tools:text="@tools:sample/date/ddmmyy" />
+        app:layout_constraintStart_toEndOf="@+id/tvTituloDireccion"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloDireccion" />
 
     <TextView
-        android:id="@+id/tvTelefonoTexto"
-        android:layout_width="131dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Telefono: "
-        android:textAlignment="textEnd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDireccion" />
+        android:id="@+id/tvTituloTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvTituloTelefono"
+        app:layout_constraintStart_toStartOf="@+id/tvTituloDireccion"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloDireccion" />
 
     <TextView
-        android:id="@+id/tvTelefonoNumero"
+        android:id="@+id/tvTelefono"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="textStart"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloTelefono"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvTelefonoTexto"
-        app:layout_constraintTop_toBottomOf="@+id/tvDireccion"
-        tools:text="966742105" />
+        app:layout_constraintStart_toEndOf="@+id/tvTituloTelefono"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloTelefono" />
 </androidx.constraintlayout.widget.ConstraintLayout>

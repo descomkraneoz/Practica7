@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "389597184728-28681g31f9opcnihqfr3kn82q0dfn5r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.iessochoa.manuelmartinez.practica7",
+            "certificate_hash": "2bbed5f13896d0317790960888e15de1075876c0"
+          }
+        },
+        {
           "client_id": "389597184728-5qqogrqlkl3au3q0lp8f72eivoobvk2a.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Practica7</string>
+    <string name="tvTituloTelefono">Teléfono: </string>
+    <string name="tvTituloDireccion">Dirección: </string>
 </resources>
