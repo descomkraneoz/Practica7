@@ -13,13 +13,6 @@ public class Empresa {
     public Empresa() {
     }
 
-    public Empresa(String nombre, String direccion, String telefono, GeoPoint localizacion) {
-        this.nombre = nombre;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.localizacion = localizacion;
-    }
-
     public String getNombre() {
         return nombre;
     }

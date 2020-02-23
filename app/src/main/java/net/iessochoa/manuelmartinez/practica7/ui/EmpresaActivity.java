@@ -50,7 +50,7 @@ public class EmpresaActivity extends AppCompatActivity {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 //leemos los datos
-                Empresa empresa = documentSnapshot.toObject(Empresa.class);
+                empresa = documentSnapshot.toObject(Empresa.class);
                 //mostramos los datos y asignamos eventos
                 asignaValoresEmpresa();
             }
